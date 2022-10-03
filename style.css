@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --family-alata: 'Alata', sans-serif;
+    --family-josefin: 'Josefin Sans', sans-serif;
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+.nav{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+.nav h2{
+    font-size: 23px;
+    font-family: var(--family-alata);
+}
+.nav img{
+    transform: scale(1.1);
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header h2{
+    padding: 25px;
+    width: 300px;
+    font-size: 35px;
+    font-family: var(--family-josefin);
+    border: 2px solid white;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+main{
+    padding: 25px;
+    margin-bottom: 50px;
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+.section-1 h2{
+    font-size: 35px;
+    font-family: var(--family-josefin);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-1 p{
+    font-size: 18px;
+    color: var(--very-dark-gray);
+    font-family: var(--family-alata);
+}
+
+.section-2 h2{
+    margin: 60px 0 25px;
+    text-align: center;
+    font-family: var(--family-josefin);
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.card{
+    position: relative;
+    height: 100px;
+    margin-bottom: 25px;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 1;
+}
+.card h3{
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--family-josefin);
+    color: white;
+    z-index: 2;
+}
+
+.card-1{
+    background-image: url(./images/mobile/image-deep-earth.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-2{
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-3{
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-4{
+    background-image: url(./images/mobile/image-grid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-5{
+    background-image: url(./images/mobile/image-from-above.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-6{
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-7{
+    background-image: url(./images/mobile/image-curiosity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-8{
+    background-image: url(./images/mobile/image-fisheye.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__button{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: white;
+    display: block;
+    margin: auto;
+    font-family: var(--family-alata);
+    font-size: 15px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.main__button:hover{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    margin: auto;
+    font-family: var(--family-alata);
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-family: var(--family-alata);
+    text-align: center;
+}
+.footer h2{
+    margin-bottom: 30px;
+}
+.footer p{
+    margin-bottom: 20px;
+}
+.redes{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copy{
+    color: var(--dark-gray);
+}
