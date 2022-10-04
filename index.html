@@ -12,15 +12,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="menu-mobile" id="menu-mobile">
+    <img id="icon-close" src="./images/icon-close.svg" alt="icon-cerrar">
+    <ul>
+      <li><a class="lista" href="#About">About</a></li>
+      <li><a class="lista" href="#Careers">Events</a></li>
+      <li><a class="lista" href="#Products">Products</a></li>
+      <li><a class="lista" href="#Support">Support</a></li>
+    </ul>
+  </div>
   <nav class="nav">
     <h2>Loopstudios</h2>
-    <img src="./images/icon-hamburger.svg" alt="icono hamburguesa">
+    <ul class="nav-desktop">
+      <li><a class="lista" href="#About">About</a></li>
+      <li><a class="lista" href="#Careers">Events</a></li>
+      <li><a class="lista" href="#Products">Products</a></li>
+      <li><a class="lista" href="#Support">Support</a></li>
+    </ul>
+    <img id="icon-hamburger" src="./images/icon-hamburger.svg" alt="icono hamburguesa">
   </nav>
-  <header class="header">
+  <header class="header" id="About">
     <h2>Immersive experiences that deliver</h2>
   </header>
   <main>
-    <section class="section-1">
+    <section class="section-1" id="Careers">
       <img src="./images/mobile/image-interactive.jpg" alt="" class="interactive-mobile">
       <img src="./images/mobile/image-interactive.jpg" alt="" class="interactive-desktop">
       <div>
@@ -32,7 +47,7 @@
       </div>
     </section>
     <section class="section-2">
-      <h2>Our creations</h2>
+      <h2 id="Products">Our creations</h2>
       <div class="section-2-container">
 
         <div class="card card-1">
@@ -71,7 +86,7 @@
     </section>
     <button class="main__button">See all</button>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="Support">
     <div class="footer-div1">
       <h2>Loopstudios</h2>
       <ul>
@@ -93,5 +108,6 @@
       <p class="copy">© 2021 Loopstudios. All rights reserved.</p>
     </div>
   </footer>
+  <script src="./app.js"></script>
 </body>
 </html>
