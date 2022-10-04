@@ -9,6 +9,9 @@
     --dark-gray: hsl(0, 0%, 55%);
     --very-dark-gray: hsl(0, 0%, 41%);
 }
+li{
+    list-style: none;
+}
 .nav{
     width: 100%;
     padding: 10px 15px 10px 10px;
@@ -208,7 +211,7 @@ main{
 .footer h2{
     margin-bottom: 30px;
 }
-.footer p{
+.footer li{
     margin-bottom: 20px;
 }
 .redes{
@@ -307,18 +310,35 @@ main{
     .card-8{
         background-image: url(./images/desktop/image-fisheye.jpg);
     }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .footer-div1 ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer-div1 h2{
+        text-align: start;
+    }
+    .redes{
+        justify-content: end;
+        margin: 10px 0 30px 0;
+    }
 }
 @media ( min-width: 1100px ){
     .section-1 div{
-        bottom: -30%;
-        right: 10%;
+        bottom: -25%;
+        right: 0;
     }
     .section-2{
         margin-top: 200px;
     }
     .section-2-container{
-        padding: 0 50px;
-        gap: 25px;
+        padding: 0 150px;
+        gap: 28px;
     }
     .card{
         height: 500px;
